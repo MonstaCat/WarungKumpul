@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Keranjang | WarungKumpul</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="assets/slippry-1.4.0/dist/slippry.css">
+
+    <link rel="stylesheet" href="assets/css/cart.css">
+  </head>
+  <body>
+
+    <!-- Navbar Menu -->
+    <div class="ui fixed inverted orange borderless menu">
+      <!-- Brand Icon -->
+      <a class="item" href="#">
+        <h3 id="nama-brand" class="ui inverted header">WarungKumpul</h3>
+      </a>
+
+      <!-- Dropdown Kategori -->
+      <div class="ui inverted orange menu">
+        <a class="kategori item">
+          Kategori
+          <i class="dropdown icon"></i>
+        </a>
+        <div class="ui fluid popup">
+          <div class="ui two column relaxed grid">
+            <div class="column">
+              <a href="#">
+                <h5 class="ui header"><img class="ui mini right spaced image" src="assets/images/category-icon/icon_hp.png">Handphone & Tablet</h5>
+              </a>
+              <div class="ui link list">
+                <a class="item">Item 1</a>
+                <a class="item">Item 2</a>
+                <a class="item">Item 3</a>
+                <a class="item">Item 4</a>
+              </div>
+            </div>
+            <div class="column">
+              <a href="#">
+                <h5 class="ui header"><img class="ui mini right spaced image" src="assets/images/category-icon/icon_laptop.png">Laptop & Aksesoris</h5>
+              </a>
+              <div class="ui link list">
+                <a class="item">Item 1</a>
+                <a class="item">Item 2</a>
+                <a class="item">Item 3</a>
+                <a class="item">Item 4</a>
+              </div>
+            </div>
+            <div class="column">
+              <a href="#">
+                <h5 class="ui header"><img class="ui mini right spaced image" src="assets/images/category-icon/icon_computer.png">Komputer & Aksesoris</h5>
+              </a>
+              <div class="ui link list">
+                <a class="item">Item 1</a>
+                <a class="item">Item 2</a>
+                <a class="item">Item 3</a>
+                <a class="item">Item 4</a>
+              </div>
+            </div>
+            <div class="column">
+              <a href="#">
+                <h5 class="ui header"><img class="ui mini right spaced image" src="assets/images/category-icon/icon_cd.png">Software</h5>
+              </a>
+              <div class="ui link list">
+                <a class="item">Item 1</a>
+                <a class="item">Item 2</a>
+                <a class="item">Item 3</a>
+                <a class="item">Item 4</a>
+              </div>
+            </div>
+            <div class="column">
+              <a href="#">
+                <h5 class="ui header"><img class="ui mini right spaced image" src="assets/images/category-icon/icon_elektronik.png">Elektronik</h5>
+              </a>
+              <div class="ui link list">
+                <a class="item">Item 1</a>
+                <a class="item">Item 2</a>
+                <a class="item">Item 3</a>
+                <a class="item">Item 4</a>
+              </div>
+            </div>
+            <div class="column">
+              <a href="#">
+                <h5 class="ui header"><img class="ui mini right spaced image" src="assets/images/category-icon/icon_gaming.png">Gaming</h5>
+              </a>
+              <div class="ui link list">
+                <a class="item">Item 1</a>
+                <a class="item">Item 2</a>
+                <a class="item">Item 3</a>
+                <a class="item">Item 4</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="item">
+        <div class="ui icon input">
+          <input id="search-bar" type="text" placeholder="Cari Barang...">
+          <i class="search icon"></i>
+        </div>
+      </div>
+
+      <!-- Cart Logo -->
+      <div class="right item">
+        <a href="#">
+          <p><i class="inverted large shopping cart icon"></i> <b>Keranjang</b></p>
+        </a>
+          <div class="ui red left pointing horizontal label">2</div>
+      </div>
+
+      <!-- Daftar Login Button -->
+      <div class="right item">
+        <button id="tombol-A" class="ui inverted standard button login">Login</button>
+        <div class="ui tiny modal">
+          <div class="header">
+            Login Member WarungKumpul
+          </div>
+          <div class="image content">
+            <div class="description">
+              <form class="ui form">
+                <div class="field">
+                  <div class="ui left icon input">
+                    <i class="user icon"></i>
+                    <input type="text" name="email" placeholder="E-mail address">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui left icon input">
+                    <i class="lock icon"></i>
+                    <input type="password" name="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="ui positive fluid button">
+                  Submit
+                </div>
+                <div class="line-through">
+                  <p>
+                    <span class="muted">atau</span>
+                  </p>
+                </div>
+                <button class="ui fluid google plus button">
+                  <i class="google plus icon"></i>
+                  Login dengan Google
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <button id="tombol-A" class="ui inverted standard button daftar">Daftar</button>
+      </div>
+    </div>
+
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ten wide column">
+          <h3><i class="cart icon text orange"></i><span class="text orange">2</span> Barang Dalam Keranjang</h3>
+
+          <!-- Barang yang masuk di keranjang -->
+          <div class="ui raised segment">
+            <div class="ui grid">
+              <div class="eight wide column">
+                <img class="ui left floated small image" src="assets/images/hot-product/1.png" alt="">
+                <a class="text black" href="#">
+                  <h3>Keyboard Rusak V.01</h3>
+                </a>
+                <p class="text orange" id="bigger-text"><b>Rp 26.000</b></p>
+              </div>
+
+              <div class="center aligned five wide column">
+                <div class="ui form">
+                  <div class="inline fields">
+                    <div>
+                      <button type="button" class="circular ui icon green basic button" data-quantity="minus" data-field="quantity"><i class="minus icon"></i></button>
+                    </div>
+                    <div class="ui input">
+                      <input type="text" name="quantity" value="0">
+                    </div>
+                    <div>
+                      <button type="button" class="circular ui icon green basic button" data-quantity="plus" data-field="quantity"><i class="plus icon"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right aligned three wide column">
+                <p id="bigger-text"><b>Rp 26.000</b></p>
+              </div>
+            </div>
+            <div class="ui grid">
+              <div class="right aligned one column">
+                <a class="text orange" href="#">
+                  <p><i class="trash alternate outline icon"></i> Hapus</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui raised segment">
+            <div class="ui grid">
+              <div class="eight wide column">
+                <img class="ui left floated small image" src="assets/images/hot-product/3.png" alt="">
+                <a class="text black" href="#">
+                  <h3>Keyboard Rusak V.07.01.2.312</h3>
+                </a>
+                <p class="text orange" id="bigger-text"><b>Rp 36.000</b></p>
+              </div>
+
+              <div class="center aligned five wide column">
+                <div class="ui form">
+                  <div class="inline fields">
+                    <div>
+                      <button type="button" class="circular ui icon green basic button" data-quantity="minus" data-field="quantity"><i class="minus icon"></i></button>
+                    </div>
+                    <div class="ui input">
+                      <input type="text" name="quantity" value="0">
+                    </div>
+                    <div>
+                      <button type="button" class="circular ui icon green basic button" data-quantity="plus" data-field="quantity"><i class="plus icon"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right aligned three wide column">
+                <p id="bigger-text"><b>Rp 36.000</b></p>
+              </div>
+            </div>
+            <div class="ui grid">
+              <div class="right aligned one column">
+                <a class="text orange" href="#">
+                  <p><i class="trash alternate outline icon"></i> Hapus</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estimasi Harga -->
+        <div class="six wide column">
+          <h3><i class="shopping bag icon text orange"></i> Ringkasan Belanja</h3>
+          <div class="ui raised segment">
+            <div class="ui grid">
+              <div class="two column row">
+                <div class="column">
+                  <p>Total Harga (<span class="text orange"><b> 2</b></span> Barang )</p>
+                </div>
+                <div class="right aligned column">
+                  <p><b>Rp 62.000</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="line-through"></div>
+            <button class="ui fluid orange button">Checkout</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+
+    $('.menu .kategori')
+    .popup({
+      inline     : true,
+      hoverable  : true,
+      setFluidWidth : true,
+      position   : 'bottom left',
+      delay: {
+        show: 200,
+        hide: 400
+      }
+    });
+
+    $('.ui.dropdown')
+    .dropdown();
+
+    $('.ui.tiny.modal')
+    .modal('attach events', '.login.button', 'show')
+    ;
+
+    jQuery(document).ready(function(){
+    // This button will increment the value
+    $('[data-quantity="plus"]').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $('[data-quantity="minus"]').click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
+
+  </script>
+</html>
