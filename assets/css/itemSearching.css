@@ -24,6 +24,10 @@
   font-size: large;
 }
 
+#medium-text {
+  font-size: medium;
+}
+
 #search-bar {
   margin-left: 2rem;
   padding-right: 29rem!important;
@@ -67,10 +71,6 @@
 
 #slider-banner {
   margin-top: 3.45rem;
-}
-
-.ui.horizontal.divider {
-  margin-top: 3rem;
 }
 
 .ui.card>.content p:last-child {

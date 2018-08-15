@@ -187,6 +187,10 @@
         </div>
 
         <div class="thirteen wide column">
+          <!-- Barang Populer -->
+          <div class="ui horizontal divider">
+            <h4>PALING POPULER</h4>
+          </div>
           <div class="ui equal width grid">
             <div class="column">
               <div class="ui card">
@@ -195,9 +199,9 @@
                 </div>
                 <div class="content">
                   <a class="header" href="#">
-                    <h4>Keyboard Rusak V.02</h4>
+                    <h5>Keyboard Rusak V.02</h5>
                   </a>
-                  <p class="orange text">
+                  <p id="medium-text" class="orange text">
                     <b>Rp 200.999</b>
                   </p>
                 </div>
@@ -219,9 +223,9 @@
                 </div>
                 <div class="content">
                   <a class="header" href="#">
-                    <h4>Keyboard Rusak V.02</h4>
+                    <h5>Keyboard Rusak V.02</h5>
                   </a>
-                  <p class="orange text">
+                  <p id="medium-text" class="orange text">
                     <b>Rp 200.999</b>
                   </p>
                 </div>
@@ -243,9 +247,9 @@
                 </div>
                 <div class="content">
                   <a class="header" href="#">
-                    <h4>Keyboard Rusak V.02</h4>
+                    <h5>Keyboard Rusak V.02</h5>
                   </a>
-                  <p class="orange text">
+                  <p id="medium-text" class="orange text">
                     <b>Rp 200.999</b>
                   </p>
                 </div>
@@ -267,9 +271,9 @@
                 </div>
                 <div class="content">
                   <a class="header" href="#">
-                    <h4>Keyboard Rusak V.02</h4>
+                    <h5>Keyboard Rusak V.02</h5>
                   </a>
-                  <p class="orange text">
+                  <p id="medium-text" class="orange text">
                     <b>Rp 200.999</b>
                   </p>
                 </div>
@@ -284,9 +288,37 @@
               </div>
             </div>
 
+            <div class="column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="assets/images/hot-product/1.png" alt="">
+                </div>
+                <div class="content">
+                  <a class="header" href="#">
+                    <h5>Keyboard Rusak V.02</h5>
+                  </a>
+                  <p id="medium-text" class="orange text">
+                    <b>Rp 200.999</b>
+                  </p>
+                </div>
+                <div class="extra content" id="no-padding-bottom">
+                  <div class="ui form">
+                    <div class="inline fields">
+                      <div class="ui star rating" data-rating="1" data-max-rating="5"></div>
+                      <p>(12930)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
+          <div class="line-through"></div>
+
+
+
         </div>
+
 
     </div>
 
@@ -313,6 +345,9 @@
     .modal('attach events', '.login.button', 'show')
     ;
 
+    $('.rating')
+      .rating('disable')
+    ;
 
   </script>
 </html>
