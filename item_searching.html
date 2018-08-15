@@ -11,10 +11,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="assets/slippry-1.4.0/dist/slippry.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
-    <link rel="stylesheet" href="assets/slippry-1.4.0/dist/slippry.css">
 
     <link rel="stylesheet" href="assets/css/index.css">
   </head>
@@ -501,7 +499,6 @@
     </div>
 
   </body>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript">
 
     $('.menu .kategori')
@@ -523,24 +520,6 @@
     .modal('attach events', '.login.button', 'show')
     ;
 
-    var thumbs = jQuery('#thumbnails').slippry({
-      // general elements & wrapper
-      slippryWrapper: '<div class="slippry_box thumbnails" />',
-      // options
-      transition: 'horizontal',
-      pager: false,
-      auto: false,
-      onSlideBefore: function (el, index_old, index_new) {
-        jQuery('.thumbs a img').removeClass('active');
-        // jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
-      }
-    });
-
-    jQuery('#slider').slippry();
-
-    $('.rating')
-      .rating('disable')
-    ;
 
   </script>
 </html>
