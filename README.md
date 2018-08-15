@@ -1,2 +1,2 @@
 # WarungKumpul
-Thiz is a basic template for e-commerce
+Build > Delete > Confused > Re-Build
