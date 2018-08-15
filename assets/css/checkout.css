@@ -52,22 +52,29 @@
 }
 
 .muted {
-  color: #999;
+  color: #999!important;
 }
 
 .ui.container {
   margin-top: 6.5rem;
 }
 
-.ui.form input[type=text] {
-  border: none;
-  border-radius: 0;
-  border-bottom: 2px solid lightgreen;
-  text-align: center;
+
+#padding-left-right-0 {
+  padding-left: 0!important;
+  padding-right: 0!important;
 }
 
-.ui.basic.green.button {
-  margin: 0;
+#margin-top-15 {
+  margin-top: -1.5rem!important;
+}
+
+#margin-top-1rem {
+  margin-top: 1rem!important;
+}
+
+#margin-bottom-1rem {
+  margin-bottom: 1rem;
 }
 
 body {

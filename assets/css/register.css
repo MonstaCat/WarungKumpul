@@ -14,9 +14,12 @@ h1:last-child {
   margin-top: 1rem;
 }
 
-.ui[class*="right floated"].segment {
-  width: 35rem;
+.ui.grid>[class*="center aligned"].column.column {
   margin-top: 3rem;
+}
+
+.ui[class*="left aligned"].segment {
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
