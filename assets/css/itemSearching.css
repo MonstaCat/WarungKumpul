@@ -29,7 +29,6 @@
 }
 
 #search-bar {
-  margin-left: 2rem;
   padding-right: 29rem!important;
 }
 
@@ -92,6 +91,10 @@
 
 .ui.breadcrumb {
   margin-bottom: 2.5rem;
+}
+
+.ui.card {
+  height: 100%;
 }
 
 body {

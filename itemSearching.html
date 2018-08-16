@@ -105,8 +105,11 @@
 
       <!-- Search Bar -->
       <div class="item">
-        <div class="ui icon input">
+        <div class="ui icon input search">
           <input id="search-bar" type="text" placeholder="Cari Barang...">
+          <div class="ui fluid popup">
+            <p>test</p>
+          </div>
           <i class="search icon"></i>
         </div>
       </div>
@@ -315,11 +318,144 @@
 
           <div class="line-through"></div>
 
+          <div class="ui equal width grid">
+            <div class="column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="assets/images/hot-product/1.png" alt="">
+                </div>
+                <div class="content">
+                  <a class="header" href="#">
+                    <h5>Keyboard Rusak V.02</h5>
+                  </a>
+                  <p id="medium-text" class="orange text">
+                    <b>Rp 200.999</b>
+                  </p>
+                </div>
+                <div class="extra content" id="no-padding-bottom">
+                  <div class="ui form">
+                    <div class="inline fields">
+                      <div class="ui star rating" data-rating="1" data-max-rating="5"></div>
+                      <p>(12930)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="assets/images/hot-product/1.png" alt="">
+                </div>
+                <div class="content">
+                  <a class="header" href="#">
+                    <h5>Keyboard Rusak V.02</h5>
+                  </a>
+                  <p id="medium-text" class="orange text">
+                    <b>Rp 200.999</b>
+                  </p>
+                </div>
+                <div class="extra content" id="no-padding-bottom">
+                  <div class="ui form">
+                    <div class="inline fields">
+                      <div class="ui star rating" data-rating="1" data-max-rating="5"></div>
+                      <p>(12930)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="assets/images/hot-product/1.png" alt="">
+                </div>
+                <div class="content">
+                  <a class="header" href="#">
+                    <h5>Keyboard Rusak V.02</h5>
+                  </a>
+                  <p id="medium-text" class="orange text">
+                    <b>Rp 200.999</b>
+                  </p>
+                </div>
+                <div class="extra content" id="no-padding-bottom">
+                  <div class="ui form">
+                    <div class="inline fields">
+                      <div class="ui star rating" data-rating="1" data-max-rating="5"></div>
+                      <p>(12930)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="assets/images/hot-product/1.png" alt="">
+                </div>
+                <div class="content">
+                  <a class="header" href="#">
+                    <h5>Keyboard Rusak V.02</h5>
+                  </a>
+                  <p id="medium-text" class="orange text">
+                    <b>Rp 200.999</b>
+                  </p>
+                </div>
+                <div class="extra content" id="no-padding-bottom">
+                  <div class="ui form">
+                    <div class="inline fields">
+                      <div class="ui star rating" data-rating="1" data-max-rating="5"></div>
+                      <p>(12930)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="ui card">
+                <div class="image">
+                  <img src="assets/images/hot-product/1.png" alt="">
+                </div>
+                <div class="content">
+                  <a class="header" href="#">
+                    <h5>Keyboard Rusak V.02</h5>
+                  </a>
+                  <p id="medium-text" class="orange text">
+                    <b>Rp 200.999</b>
+                  </p>
+                </div>
+                <div class="extra content" id="no-padding-bottom">
+                  <div class="ui form">
+                    <div class="inline fields">
+                      <div class="ui star rating" data-rating="1" data-max-rating="5"></div>
+                      <p>(12930)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="ui grid">
+            <div class="right aligned column">
+              <div class="ui pagination menu">
+                <a class="item" href="#">1</a>
+                <a class="item" href="#">2</a>
+                <a class="item" href="#">3</a>
+                <a class="item" href="#">4</a>
+                <a class="item" href="#">5</a>
+                <a class="item" href="#">6</a>
+              </div>
+            </div>
+          </div>
 
         </div>
-
-
+      </div>
     </div>
 
 
@@ -340,6 +476,12 @@
 
     $('.ui.dropdown')
     .dropdown();
+
+    $('input')
+      .popup({
+        on: 'focus'
+      })
+    ;
 
     $('.ui.tiny.modal')
     .modal('attach events', '.login.button', 'show')
