@@ -30,6 +30,17 @@
   padding-right: 29rem!important;
 }
 
+#search-reference {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  display: block;
+}
+
+#search-reference:hover {
+  background-color: #f9f9f9;
+}
+
 #tombol-A {
   transition: 0.3s;
   margin-right: 8px;

@@ -109,6 +109,16 @@
       <div class="item">
         <div class="ui icon input">
           <input id="search-bar" type="text" placeholder="Cari Barang...">
+          <div class="ui fluid popup">
+            <a id="search-reference" class="text black" href="#"><b>Keyboard</b> <span class="text orange"> di Semua Kategori</span></a>
+            <a id="search-reference" class="text black" href="#"><b>Keyboard</b> <span class="text orange"> di Handphone & Tablet</span></a>
+            <a id="search-reference" class="text black" href="#"><b>Keyboard</b> <span class="text orange"> di Gaming</span></a>
+            <a id="search-reference" class="text black" href="#">Keyboard Rusak V.0.1.02</a>
+            <a id="search-reference" class="text black" href="#">Keyboard Rusak V.0.1.02</a>
+            <a id="search-reference" class="text black" href="#">Keyboard Rusak V.0.1.02</a>
+            <a id="search-reference" class="text black" href="#">Keyboard Rusak V.0.1.02</a>
+            <a id="search-reference" class="text black" href="#">Keyboard Rusak V.0.1.02</a>
+          </div>
           <i class="search icon"></i>
         </div>
       </div>
@@ -518,6 +528,12 @@
 
     $('.ui.dropdown')
     .dropdown();
+
+    $('input')
+      .popup({
+        on: 'focus'
+      })
+    ;
 
     $('.ui.tiny.modal')
     .modal('attach events', '.login.button', 'show')
