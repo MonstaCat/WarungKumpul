@@ -112,6 +112,59 @@ body {
   height: 100%;
 }
 
+#title-kualitas {
+  margin-top: 2rem;
+}
+
+#large-text {
+  font-size: large;
+}
+
+#ulasan-rating {
+  display: block;
+}
+
+#padding-right-star {
+  padding-right: 1.5rem;
+}
+
+#padding-left {
+  padding-left: 1.5rem;
+}
+
+td {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#width-100 {
+  width: 100%;
+}
+
+#margin-bottom {
+  margin-bottom: 1rem;
+}
+
+#card-comment {
+  margin-bottom: 3rem;
+}
+
+#comment-section {
+  margin: 1rem;
+}
+
+#admin-comment-section {
+  margin-left: 2rem;
+}
+
+#extra-content-admin {
+  background-color: #f5f5fe;
+}
+
+#rating-comment {
+  margin-bottom: 1rem;
+}
+
 body {
   /*display: none;*/
 }
