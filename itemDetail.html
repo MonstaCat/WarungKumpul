@@ -219,58 +219,249 @@
           <div class="line-through"></div>
 
           <h4>Estimasi Ongkos Kirim</h4>
+
           <div class="ui segment">
 
-            <div class="ui dropdown">
-              <input type="hidden" name="filters">
-              <span class="text">Kecamatan</span>
-              <i class="dropdown icon"></i>
-              <div class="menu">
-                <div class="ui icon search input">
-                  <i class="search icon"></i>
-                  <input type="text" placeholder="Search tags...">
-                </div>
-                <div class="scrolling menu">
-                  <div class="item" data-value="important">
-                    <div class="ui red empty circular label"></div>
-                    Important
-                  </div>
-                  <div class="item" data-value="announcement">
-                    <div class="ui blue empty circular label"></div>
-                    Announcement
-                  </div>
-                  <div class="item" data-value="cannotfix">
-                    <div class="ui black empty circular label"></div>
-                    Cannot Fix
-                  </div>
-                  <div class="item" data-value="news">
-                    <div class="ui purple empty circular label"></div>
-                    News
-                  </div>
-                  <div class="item" data-value="enhancement">
-                    <div class="ui orange empty circular label"></div>
-                    Enhancement
-                  </div>
-                  <div class="item" data-value="off-topic">
-                    <div class="ui yellow empty circular label"></div>
-                    Off Topic
-                  </div>
-                  <div class="item" data-value="interesting">
-                    <div class="ui pink empty circular label"></div>
-                    Interesting
-                  </div>
-                  <div class="item" data-value="discussion">
-                    <div class="ui green empty circular label"></div>
-                    Discussion
+            <div class="ui equal width grid">
+
+              <!-- Kecamatan -->
+              <div class="column">
+                <p class="muted">Kecamatan</p>
+                <div class="ui dropdown">
+                  <input type="hidden" name="filters">
+                  <span class="text">Pilih Kecamatan</span>
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <div class="ui icon search input">
+                      <i class="search icon"></i>
+                      <input type="text" placeholder="Search tags...">
+                    </div>
+                    <div class="scrolling menu">
+                      <div class="item" data-value="important">
+                        Important
+                      </div>
+                      <div class="item" data-value="announcement">
+                        Announcement
+                      </div>
+                      <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                      </div>
+                      <div class="item" data-value="news">
+                        News
+                      </div>
+                      <div class="item" data-value="enhancement">
+                        Enhancement
+                      </div>
+                      <div class="item" data-value="off-topic">
+                        Off Topic
+                      </div>
+                      <div class="item" data-value="interesting">
+                        Interesting
+                      </div>
+                      <div class="item" data-value="discussion">
+                        Discussion
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
+              <!-- Kode Pos -->
+              <div class="column">
+                <p class="muted">Kode Pos</p>
+                <div class="ui dropdown">
+                  <input type="hidden" name="filters">
+                  <span class="text">Pilih Kode Pos</span>
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <div class="ui icon search input">
+                      <i class="search icon"></i>
+                      <input type="text" placeholder="Search tags...">
+                    </div>
+                    <div class="scrolling menu">
+                      <div class="item" data-value="important">
+                        Important
+                      </div>
+                      <div class="item" data-value="announcement">
+                        Announcement
+                      </div>
+                      <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                      </div>
+                      <div class="item" data-value="news">
+                        News
+                      </div>
+                      <div class="item" data-value="enhancement">
+                        Enhancement
+                      </div>
+                      <div class="item" data-value="off-topic">
+                        Off Topic
+                      </div>
+                      <div class="item" data-value="interesting">
+                        Interesting
+                      </div>
+                      <div class="item" data-value="discussion">
+                        Discussion
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Berat Barang -->
+              <div class="column">
+                <br>
+                <form class="ui form">
+                  <div class="ui fluid right labeled input">
+                    <div class="ui disabled input">
+                      <input type="text" value="500">
+                    </div>
+                    <div class="ui basic label">
+                      gr
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Button Hitung -->
+              <div class="right aligned column">
+                <br>
+                <button class="ui fluid green button">Hitung</button>
+              </div>
+
+            </div>
           </div>
 
         </div>
       </div>
+
+      <div class="ui large orange secondary pointing menu">
+        <a class="item" data-tab="informasi-produk" href="#"><i class="ui clipboard outline icon"></i> Informasi Produk</a>
+        <a class="item active" data-tab="ulasan" href="#"><i class="ui star outline icon"></i> Ulasan</a>
+        <a class="item" data-tab="diskusi-produk" href="#"><i class="ui question circle outline icon"></i> Diskusi Produk</a>
+      </div>
+      <div class="ui bottom attached tab" data-tab="informasi-produk">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+
+      <div class="ui active bottom attached tab" data-tab="ulasan">
+        <div class="ui fluid card">
+          <h5 class="center aligned" id="title-kualitas">KUALITAS PRODUK</h5>
+          <div class="ui grid">
+            <div class="three wide column"></div>
+            <div class="four wide column">
+              <!-- Estimasi rating -->
+              <div class="ui statistic">
+                <div class="value">
+                  3.5<span class="tiny muted" id="large-text">/5</span>
+                </div>
+              </div>
+              <div class="ui huge star rating" id="ulasan-rating" data-rating="3" data-max-rating="5"></div>
+            </div>
+            <div class="six wide column">
+              <table>
+                <tr>
+                  <td>
+                    <p class="muted">5</p>
+                  </td>
+                  <td id="padding-right-star">
+                    <div class="ui star rating" data-rating="1" data-max-rating="1"></div>
+                  </td>
+                  <td id="width-100">
+                    <br>
+                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                      <div class="bar"></div>
+                    </div>
+                  </td>
+                  <td id="padding-left">
+                    <p class="muted">(1)</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p class="muted">4</p>
+                  </td>
+                  <td id="padding-right-star">
+                    <div class="ui star rating" data-rating="1" data-max-rating="1"></div>
+                  </td>
+                  <td id="width-100">
+                    <br>
+                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                      <div class="bar"></div>
+                    </div>
+                  </td>
+                  <td id="padding-left">
+                    <p class="muted">(2)</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p class="muted">3</p>
+                  </td>
+                  <td id="padding-right-star">
+                    <div class="ui star rating" data-rating="1" data-max-rating="1"></div>
+                  </td>
+                  <td id="width-100">
+                    <br>
+                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                      <div class="bar"></div>
+                    </div>
+                  </td>
+                  <td id="padding-left">
+                    <p class="muted">(3)</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p class="muted">2</p>
+                  </td>
+                  <td id="padding-right-star">
+                    <div class="ui star rating" data-rating="1" data-max-rating="1"></div>
+                  </td>
+                  <td id="width-100">
+                    <br>
+                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                      <div class="bar"></div>
+                    </div>
+                  </td>
+                  <td id="padding-left">
+                    <p class="muted">(4)</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <p class="muted">1</p>
+                  </td>
+                  <td id="padding-right-star">
+                    <div class="ui star rating" data-rating="1" data-max-rating="1"></div>
+                  </td>
+                  <td id="width-100">
+                    <br>
+                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                      <div class="bar"></div>
+                    </div>
+                  </td>
+                  <td id="padding-left">
+                    <p class="muted">(5)</p>
+                  </td>
+                </tr>
+              </table>
+
+
+            </div>
+            <div class="three wide column"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui bottom attached tab" data-tab="diskusi-produk">
+        diskusi produk ini
+      </div>
+
     </div>
 
 
@@ -290,6 +481,10 @@
       }
     });
 
+    $('.menu .item')
+      .tab()
+    ;
+
     $('.ui.dropdown')
     .dropdown();
 
@@ -306,6 +501,8 @@
     $('.rating')
       .rating('disable')
     ;
+
+    $('#rating-progress').progress();
 
   </script>
 </html>

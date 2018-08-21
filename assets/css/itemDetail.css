@@ -112,6 +112,35 @@ body {
   height: 100%;
 }
 
+#title-kualitas {
+  margin-top: 1rem;
+}
+
+#large-text {
+  font-size: large;
+}
+
+#ulasan-rating {
+  display: block;
+}
+
+#padding-right-star {
+  padding-right: 1.5rem;
+}
+
+#padding-left {
+  padding-left: 1.5rem;
+}
+
+td {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#width-100 {
+  width: 100%;
+}
+
 body {
   /*display: none;*/
 }
