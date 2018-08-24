@@ -112,6 +112,15 @@ body {
   height: 100%;
 }
 
+#gambar-produk {
+  max-height: 28rem;
+  max-width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+  color:red !important;
+}
+
 #title-kualitas {
   margin-top: 2rem;
 }
@@ -162,6 +171,31 @@ td {
 }
 
 #rating-comment {
+  margin-bottom: 1rem;
+}
+
+#estimasi-ongkir {
+  margin: 1rem;
+}
+
+#pesan-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#padding-row {
+  padding-bottom: 0rem;
+  padding-top: 0.5rem;
+}
+
+#title-spek {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#title-desc {
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 

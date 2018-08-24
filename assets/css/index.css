@@ -98,6 +98,21 @@
   margin-bottom: 2rem;
 }
 
+/*FOOTER SECTION*/
+
+#footer-section {
+  margin-top: 5rem;
+}
+
+#footer-content {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#contact-us {
+  margin-top: 0;
+}
+
 body {
   /*display: none;*/
 }
