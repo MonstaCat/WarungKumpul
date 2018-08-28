@@ -11,9 +11,11 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/slippry-1.4.0/dist/slippry.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" href="assets/slippry-1.4.0/dist/slippry.css">
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
 
     <link rel="stylesheet" href="assets/css/itemDetail.css">
   </head>
@@ -189,7 +191,30 @@
       <div class="ui grid">
         <!-- Slick Slider -->
         <div class="six wide column">
-          <div class="ui segment">
+          <div class="ui segment" id="gambar-produk">
+
+            <ul id="thumbnails">
+              <li>
+                <a href="#slide1">
+                  <img src="assets/images/hot-product/1.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#slide2">
+                  <img src="assets/images/hot-product/2.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#slide3">
+                  <img src="assets/images/hot-product/3.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#slide4">
+                  <img src="assets/images/hot-product/4.png" alt="">
+                </a>
+              </li>
+            </ul>
 
           </div>
         </div>
@@ -330,21 +355,201 @@
               </div>
 
             </div>
+
+            <!-- Estimasi Ongkos Kirim -->
+            <div class="ui fluid card">
+              <div id="estimasi-ongkir">
+                <h4>Estimasi Ongkir:</h4>
+                <div class="line-through"></div>
+                <div class="ui equal width grid">
+                  <div class="column">
+                    <p><b>Instan</b></p>
+                  </div>
+                  <div class="column">
+                    <p><b>Maks. 4 jam</b></p>
+                  </div>
+                  <div class="column">
+                    <p><b class="text orange">Rp 20.000</b></p>
+                  </div>
+                </div>
+                <div class="line-through"></div>
+                <div class="ui equal width grid">
+                  <div class="column">
+                    <p><b>Reguler</b></p>
+                  </div>
+                  <div class="column">
+                    <p><b>1 - 3 Hari</b></p>
+                  </div>
+                  <div class="column">
+                    <p><b class="text orange">Rp 24.000 - Rp 28.000</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
       </div>
 
       <div class="ui large orange secondary pointing menu">
-        <a class="item" data-tab="informasi-produk" href="#"><i class="ui clipboard outline icon"></i> Informasi Produk</a>
-        <a class="item active" data-tab="ulasan" href="#"><i class="ui star outline icon"></i> Ulasan</a>
-        <a class="item" data-tab="diskusi-produk" href="#"><i class="ui question circle outline icon"></i> Diskusi Produk</a>
-      </div>
-      <div class="ui bottom attached tab" data-tab="informasi-produk">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a class="item active" data-tab="informasi-produk" href="#"><i class="ui clipboard outline icon"></i> Informasi Produk</a>
+        <a class="item" data-tab="ulasan" href="#"><i class="ui star outline icon"></i> Ulasan</a>
+        <a class="item" data-tab="pertanyaan-produk" href="#"><i class="ui question circle outline icon"></i> Pertanyaan Produk</a>
       </div>
 
-      <div class="ui active bottom attached tab" data-tab="ulasan">
+      <div class="ui active bottom attached tab" data-tab="informasi-produk">
+        <!-- Informasi -->
+        <div class="ui fluid card">
+
+          <div class="ui grid" id="estimasi-ongkir">
+            <div class="three wide column">
+
+              <h5><i class="ui warehouse icon"></i> SISA BARANG</h5>
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              <h5 id="orange-text">100</h5>
+            </div>
+            <div class="two wide column"></div>
+            <div class="three wide column">
+              <h5><i class="ui boxes icon"></i> BARANG TERJUAL</h5>
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              <h5 id="orange-text">30</h5>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Spek Produk -->
+        <h5 id="title-spek">SPESIFIKASI PRODUK</h5>
+        <div class="ui grid">
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Kategori
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Berat
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Merek
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Operating System
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Network
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Garansi
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Features
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Display Size
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+          <div class="row" id="padding-row">
+            <div class="one wide column"></div>
+            <div class="two wide column">
+              Camera
+            </div>
+            <div class="right aligned column">
+              :
+            </div>
+            <div class="column">
+              NULL
+            </div>
+          </div>
+        </div>
+
+        <h5 id="title-desc">DESKRIPSI PRODUK</h5>
+        <div class="ui grid">
+          <div class="one wide column"></div>
+          <div class="fifteen wide column">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+
+      <div class="ui bottom attached tab" data-tab="ulasan">
         <div class="ui fluid card">
           <h5 class="center aligned" id="title-kualitas">KUALITAS PRODUK</h5>
           <div class="ui grid">
@@ -359,7 +564,7 @@
               <div class="ui huge star rating" id="ulasan-rating" data-rating="3" data-max-rating="5"></div>
             </div>
             <div class="six wide column">
-              <table>
+              <table id="margin-bottom">
                 <tr>
                   <td>
                     <p class="muted">5</p>
@@ -369,7 +574,7 @@
                   </td>
                   <td id="width-100">
                     <br>
-                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                    <div class="ui tiny yellow progress warning" id="rating-progress5" data-value="100">
                       <div class="bar"></div>
                     </div>
                   </td>
@@ -387,7 +592,7 @@
                   </td>
                   <td id="width-100">
                     <br>
-                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                    <div class="ui tiny yellow progress warning" id="rating-progress4" data-value="80">
                       <div class="bar"></div>
                     </div>
                   </td>
@@ -405,7 +610,7 @@
                   </td>
                   <td id="width-100">
                     <br>
-                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                    <div class="ui tiny yellow progress warning" id="rating-progress3" data-value="60">
                       <div class="bar"></div>
                     </div>
                   </td>
@@ -423,7 +628,7 @@
                   </td>
                   <td id="width-100">
                     <br>
-                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                    <div class="ui tiny yellow progress warning" id="rating-progress2" data-value="40">
                       <div class="bar"></div>
                     </div>
                   </td>
@@ -441,7 +646,7 @@
                   </td>
                   <td id="width-100">
                     <br>
-                    <div class="ui tiny yellow progress warning" id="rating-progress" data-value="100">
+                    <div class="ui tiny yellow progress warning" id="rating-progress1" data-value="20">
                       <div class="bar"></div>
                     </div>
                   </td>
@@ -456,14 +661,274 @@
             <div class="three wide column"></div>
           </div>
         </div>
+
+        <!-- KOMENTAR ULASAN -->
+        <h5>ULASAN TERBARU</h5>
+        <div class="ui fluid card" id="card-comment">
+          <div class="ui comments" id="comment-section">
+            <div class="comment">
+              <div class="rating-class">
+                <div class="ui large star rating" id="rating-comment" data-rating="5" data-max-rating="5"></div>
+              </div>
+              <div class="avatar">
+                <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+              </div>
+              <div class="content">
+                <span class="author"><b>Andika Rizki Pradana</b></span>
+                <div class="metadata">
+                  <div class="date">2 hari yang lalu</div>
+                </div>
+                <div class="text">
+                  Barang cepat sampainya, packing rapi, admin bersahabat
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="extra content" id="extra-content-admin">
+            <div class="ui comments" id="admin-comment-section">
+              <div class="comment">
+                <div class="avatar">
+                  <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+                </div>
+                <div class="content">
+                  <span class="author" id="orange-text"><b>Admin</b></span>
+                  <div class="metadata">
+                    <div class="date">2 hari yang lalu</div>
+                  </div>
+                  <div class="text">
+                    Terimakasih telah berbelanja disini ya mhanx
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui fluid card" id="card-comment">
+          <div class="ui comments" id="comment-section">
+            <div class="comment">
+              <div class="rating-class">
+                <div class="ui large star rating" id="rating-comment" data-rating="4" data-max-rating="5"></div>
+              </div>
+              <div class="avatar">
+                <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+              </div>
+              <div class="content">
+                <span class="author"><b>Raga Mulia Kusuma</b></span>
+                <div class="metadata">
+                  <div class="date">6 hari yang lalu</div>
+                </div>
+                <div class="text">
+                  Packing greget banget mhanxxx!!!!!
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="extra content" id="extra-content-admin">
+            <div class="ui comments" id="admin-comment-section">
+              <div class="comment">
+                <div class="avatar">
+                  <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+                </div>
+                <div class="content">
+                  <span class="author" id="orange-text"><b>Admin</b></span>
+                  <div class="metadata">
+                    <div class="date">6 hari yang lalu</div>
+                  </div>
+                  <div class="text">
+                    Jangan ngegas anj**g ! ! 1 ! ! ! 1 ! !
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="ui bottom attached tab" data-tab="diskusi-produk">
-        diskusi produk ini
+      <div class="ui bottom attached tab" data-tab="pertanyaan-produk">
+        <div class="ui fluid card">
+          <!-- Judul Header Pertanyaan -->
+          <div class="ui grid">
+            <div class="center aligned column">
+              <h5 class="center aligned" id="title-kualitas">KOLOM PERTANYAAN PRODUK</h5>
+            </div>
+          </div>
+
+          <!-- Kolom Pertanyaan -->
+          <div class="ui grid">
+            <div class="column" id="pesan-text">
+              <form class="ui reply form">
+                <div class="field">
+                  <textarea rows="4" placeholder="Silahkan tanyakan pertanyaan seputar produk disini . . ."></textarea>
+                </div>
+                <div class="ui green labeled submit icon button">
+                  <i class="icon edit"></i> Tanyakan Produk
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan Terbaru -->
+        <h5>PERTANYAAN TERBARU</h5>
+
+        <!-- Pertanyaan Section -->
+        <div class="ui fluid card" id="card-comment">
+          <div class="ui comments" id="comment-section">
+            <div class="comment">
+              <div class="avatar">
+                <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+              </div>
+              <div class="content">
+                <span class="author"><b>Dika</b></span>
+                <div class="metadata">
+                  <div class="date">2 hari yang lalu</div>
+                </div>
+                <div class="text">
+                  Barang Tersedia?
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Admin Section -->
+          <div class="extra content" id="extra-content-admin">
+            <div class="ui comments" id="admin-comment-section">
+              <div class="comment">
+                <div class="avatar">
+                  <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+                </div>
+                <div class="content">
+                  <span class="author" id="orange-text"><b>Admin</b></span>
+                  <div class="metadata">
+                    <div class="date">2 hari yang lalu</div>
+                  </div>
+                  <div class="text">
+                    Tersedia gan!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan Section -->
+        <div class="ui fluid card" id="card-comment">
+          <div class="ui comments" id="comment-section">
+            <div class="comment">
+              <div class="avatar">
+                <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+              </div>
+              <div class="content">
+                <span class="author"><b>Raga</b></span>
+                <div class="metadata">
+                  <div class="date">2 hari yang lalu</div>
+                </div>
+                <div class="text">
+                  Pengiriman via apa aja gan?
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Admin Section -->
+          <div class="extra content" id="extra-content-admin">
+            <div class="ui comments" id="admin-comment-section">
+              <div class="comment">
+                <div class="avatar">
+                  <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+                </div>
+                <div class="content">
+                  <span class="author" id="orange-text"><b>Admin</b></span>
+                  <div class="metadata">
+                    <div class="date">2 hari yang lalu</div>
+                  </div>
+                  <div class="text">
+                    Via bluetooth bisa gan!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan Section -->
+        <div class="ui fluid card" id="card-comment">
+          <div class="ui comments" id="comment-section">
+            <div class="comment">
+              <div class="avatar">
+                <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+              </div>
+              <div class="content">
+                <span class="author"><b>Taufik</b></span>
+                <div class="metadata">
+                  <div class="date">2 hari yang lalu</div>
+                </div>
+                <div class="text">
+                  Bisa cod gan?
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Admin Section -->
+          <div class="extra content" id="extra-content-admin">
+            <div class="ui comments" id="admin-comment-section">
+              <div class="comment">
+                <div class="avatar">
+                  <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+                </div>
+                <div class="content">
+                  <span class="author" id="orange-text"><b>Admin</b></span>
+                  <div class="metadata">
+                    <div class="date">2 hari yang lalu</div>
+                  </div>
+                  <div class="text">
+                    Bisa banget gan!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan Section -->
+        <div class="ui fluid card" id="card-comment">
+          <div class="ui comments" id="comment-section">
+            <div class="comment">
+              <div class="avatar">
+                <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+              </div>
+              <div class="content">
+                <span class="author"><b>Dika</b></span>
+                <div class="metadata">
+                  <div class="date">2 hari yang lalu</div>
+                </div>
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Admin Section -->
+          <div class="extra content" id="extra-content-admin">
+            <div class="ui comments" id="admin-comment-section">
+              <div class="comment">
+                <div class="avatar">
+                  <img src="https://en.gravatar.com/userimage/125320465/df4d7a67c753bec4e93db2ba5f11d130.png">
+                </div>
+                <div class="content">
+                  <span class="author" id="orange-text"><b>Admin</b></span>
+                  <div class="metadata">
+                    <div class="date">2 hari yang lalu</div>
+                  </div>
+                  <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-
-    </div>
-
 
   </body>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -502,7 +967,19 @@
       .rating('disable')
     ;
 
-    $('#rating-progress').progress();
+    $('#rating-progress1').progress();
+    $('#rating-progress2').progress();
+    $('#rating-progress3').progress();
+    $('#rating-progress4').progress();
+    $('#rating-progress5').progress();
+
+    jQuery(document).ready(function(){
+      jQuery('#thumbnails').slippry({
+        pager: false,
+        autoDelay: 10,
+        pause: 3200,
+      });
+    });
 
   </script>
 </html>
